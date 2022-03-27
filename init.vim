@@ -1,7 +1,6 @@
 """""""""""""""""""""""""""""""""""""
 " Plugins
 """""""""""""""""""""""""""""""""""""
-
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'https://github.com/morhetz/gruvbox' " scheme
@@ -20,17 +19,22 @@ Plug 'https://github.com/mg979/vim-xtabline' " Styles for tabs
 
 call plug#end()
 
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endFf
+"-----------------------------
+" nerdtree setup
+"-----------------------------
+" Start NERDTree when Vim is started without file arguments.
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+" Assignment of a specific key or shortcut
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 "> let g:NERDTreeDirArrowExpandable="+"
 "> let g:NERDTreeDirArrowCollapsible="-"
 
+
 """""""""""""""""""""""""""""""""""""
 " General settings
 """""""""""""""""""""""""""""""""""""
-
 "-----------------------------
 " Self indentación
 "-----------------------------
