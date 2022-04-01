@@ -15,6 +15,7 @@ Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'https://github.com/mg979/vim-xtabline' " Styles for tabs
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "> Plug 'https://github.com/terryma/vim-multiple-cursors'
 
 call plug#end()
