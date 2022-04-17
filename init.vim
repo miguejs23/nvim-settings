@@ -3,7 +3,9 @@
 """""""""""""""""""""""""""""""""""""
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'https://github.com/morhetz/gruvbox' " scheme
+Plug 'https://github.com/morhetz/gruvbox' " Scheme
+Plug 'https://github.com/joshdick/onedark.vim' " Scheme <- just now
+
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/preservim/nerdtree' " File tree
 Plug 'https://github.com/sheerun/vim-polyglot' " Syntax highlighting
@@ -15,7 +17,8 @@ Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'https://github.com/mg979/vim-xtabline' " Styles for tabs
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocomplet
+Plug 'https://github.com/vim-syntastic/syntastic' " Syntax checking
 "> Plug 'https://github.com/terryma/vim-multiple-cursors'
 
 call plug#end()
@@ -71,4 +74,5 @@ set noexpandtab " Use tabs, not spaces
 " mouse mode
 set mouse=a
 " Color Scheme
-colorscheme gruvbox
+set termguicolors
+colorscheme onedark
