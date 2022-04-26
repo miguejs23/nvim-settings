@@ -17,7 +17,7 @@
 ## Requirements
 Install nvim unix-linux
 ```bash 
-sudo apt-get nvim
+sudo apt-get install neovim
 ```
 Install a vim plugin manager **([Vim-plug](https://github.com/junegunn/vim-plug))**
 ```bash
