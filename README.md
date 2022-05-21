@@ -7,12 +7,17 @@
   <img src='https://user-images.githubusercontent.com/102398717/160273971-2552d556-c264-4008-aea7-3a74bc9c5c25.png' width="50px">
 </ul>
 
+## Themes
+- Default
+![image](https://user-images.githubusercontent.com/102398717/163711480-16e38023-7925-446b-b33c-226b3cdf8fe4.png)
+
+- Others
 ![image](https://user-images.githubusercontent.com/102398717/160276513-553fe5b9-85bc-4432-8112-2dfd5290cac6.png)
 
 ## Requirements
 Install nvim unix-linux
-```bash
-sudo apt-get nvim
+```bash 
+sudo apt-get install neovim
 ```
 Install a vim plugin manager **([Vim-plug](https://github.com/junegunn/vim-plug))**
 ```bash
