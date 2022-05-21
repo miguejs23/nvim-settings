@@ -3,22 +3,31 @@
 """""""""""""""""""""""""""""""""""""
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'https://github.com/morhetz/gruvbox' " Scheme
-Plug 'https://github.com/joshdick/onedark.vim' " Scheme <- just now
+" Themes
+Plug 'https://github.com/morhetz/gruvbox'
+Plug 'https://github.com/joshdick/onedark.vim' " <- Default
 
+" Syntax
+Plug 'https://github.com/sheerun/vim-polyglot' " Syntax highlighting
+Plug 'https://github.com/vim-syntastic/syntastic' " Syntax checking
+
+" Status 
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/preservim/nerdtree' " File tree
-Plug 'https://github.com/sheerun/vim-polyglot' " Syntax highlighting
-Plug 'https://github.com/jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair.
-Plug 'https://github.com/alvan/vim-closetag' " Close html tag
-Plug 'https://github.com/tpope/vim-commentary' " For add comments
-Plug 'https://github.com/ryanoasis/vim-devicons' " Developer icons
-Plug 'mattn/emmet-vim'
-Plug 'tpope/vim-surround'
-Plug 'AndrewRadev/tagalong.vim'
 Plug 'https://github.com/mg979/vim-xtabline' " Styles for tabs
+Plug 'https://github.com/ryanoasis/vim-devicons' " Developer icons
+Plug 'AndrewRadev/tagalong.vim'
+
+" Typing
+Plug 'https://github.com/jiangmiao/auto-pairs' " insert or delete parenthesis
+Plug 'https://github.com/alvan/vim-closetag' " Close html tag
+Plug 'https://github.com/tpope/vim-commentary' " to comment
+Plug 'tpope/vim-surround' " wrap text
+Plug 'mattn/emmet-vim'
+
+
+" Autocomplet
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocomplet
-Plug 'https://github.com/vim-syntastic/syntastic' " Syntax checking
 "> Plug 'https://github.com/terryma/vim-multiple-cursors'
 
 call plug#end()
